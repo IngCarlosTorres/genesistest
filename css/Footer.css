@@ -1,0 +1,32 @@
+.backgroundFooter {
+    background-color: #252B42;
+    width: auto;
+    height: auto;
+}
+
+.text-wrapper {
+    color: var(--light-text-color);
+    font-family: "Martel-Bold";
+    font-style: var(--h-3-font-style);
+    letter-spacing: var(--h-3-letter-spacing);
+    line-height: var(--h-3-line-height);
+    white-space: nowrap;
+}
+
+.titleOption {
+    color: var(--light-text-color);
+    font-family: "Martel-Bold";
+    font-style: var(--h-5-font-style);
+    letter-spacing: var(--h-5-letter-spacing);
+    line-height: var(--h-5-line-height);
+    white-space: nowrap;
+}
+
+.subtitleOption {
+    color: var(--light-text-color);
+    font-family: var(--h-5-font-family);
+    font-style: var(--h-5-font-style);
+    letter-spacing: var(--h-5-letter-spacing);
+    line-height: var(--h-5-line-height);
+    white-space: nowrap;
+}

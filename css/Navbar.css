@@ -1,0 +1,204 @@
+.backGroundNav {
+    background-color: #f6f6f6;
+}
+
+.titleNavMobile {
+    color: var(--text-color);
+    font-family: "Martel-Bold";
+    font-style: var(--h-3-font-style);
+    letter-spacing: var(--h-3-letter-spacing);
+    line-height: var(--h-3-line-height);
+    white-space: nowrap;
+}
+
+.labelMenu {
+    color: var(--second-text-color);
+    font-family: var(--mobile-menu-font-family);
+    font-style: var(--mobile-menu-font-style);
+    letter-spacing: var(--mobile-menu-letter-spacing);
+    line-height: var(--mobile-menu-line-height);
+    white-space: nowrap;
+}
+
+.coverMobile {
+    background-image: url(/assets/img/cover.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+
+.label-h1Mobile {
+    color: var(--text-color);
+    font-family: "Martel-Bold";
+    font-style: var(--h-2-font-style);
+    letter-spacing: var(--h-2-letter-spacing);
+}
+
+.label-pMobile {
+    color: var(--second-text-color);
+    font-family: var(--h-4-font-family);
+    font-style: var(--h-4-font-style);
+    letter-spacing: var(--h-4-letter-spacing);
+    
+}
+
+.button-btn-primaryMobile {
+    align-items: center;
+    background-color: var(--secondary-color-2);
+    border-radius: 37px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    padding: 10px 36px;
+    position: relative;
+}
+
+.btn-textMobile {
+    color: var(--light-text-color);
+    font-family: var(--btn-text-font-family);
+    font-size: var(--btn-text-font-size);
+    font-style: var(--btn-text-font-style);
+    font-weight: var(--btn-text-font-weight);
+    letter-spacing: var(--btn-text-letter-spacing);
+    line-height: var(--btn-text-line-height);
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.btn-text-wrapperMobile {
+    all: unset;
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--secondary-color-2);
+    border-radius: 37px;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    padding: 10px 36px;
+    position: relative;
+}
+
+.text-wrapperMobile {
+    all: unset;
+    box-sizing: border-box;
+    color: var(--secondary-color-2);
+    font-family: var(--btn-text-font-family);
+    font-size: var(--btn-text-font-size);
+    font-style: var(--btn-text-font-style);
+    font-weight: var(--btn-text-font-weight);
+    letter-spacing: var(--btn-text-letter-spacing);
+    line-height: var(--btn-text-line-height);
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.card-itemMobile {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-itemMobile .h {
+    color: var(--text-color);
+    font-family: var(--h-3-font-family);
+    font-size: var(--h-3-font-size);
+    font-style: var(--h-3-font-style);
+    font-weight: var(--h-3-font-weight);
+    letter-spacing: var(--h-3-letter-spacing);
+    line-height: var(--h-3-line-height);
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.card-itemMobile .card-content {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: #ffffff;
+    border-radius: 1px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.labelform-controlMobile {
+    color: var(--text-color);
+    font-family: var(--h-6-font-family);
+    font-size: var(--h-6-font-size);
+    font-style: var(--h-6-font-style);
+    font-weight: var(--h-6-font-weight);
+    letter-spacing: var(--h-6-letter-spacing);
+    line-height: var(--h-6-line-height);
+    white-space: nowrap;
+}
+
+.input-form-controlMobile {
+    background-color: #f8f8f8;
+    border: 1px solid;
+    border-color: var(--muted-color);
+    border-radius: 5px;
+    color: var(--second-text-color);
+    font-family: "Montserrat-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    height: 50px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    overflow: hidden;
+    padding: 0;
+    padding-left: 21px;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.card-itemMobile .button-btn-primaryMobile {
+    align-items: center;
+    background-color: var(--secondary-color-4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    padding: 15px 40px;
+    position: relative;
+    width: 100%;
+}
+
+.card-itemMobile .btn-textMobile {
+    color: var(--light-text-color);
+    font-family: var(--btn-text-font-family);
+    font-size: var(--btn-text-font-size);
+    font-style: var(--btn-text-font-style);
+    font-weight: var(--btn-text-font-weight);
+    letter-spacing: var(--btn-text-letter-spacing);
+    line-height: var(--btn-text-line-height);
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
