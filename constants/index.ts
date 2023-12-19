@@ -52,6 +52,46 @@ export const OPTIONS_CARD_BODY = [
     },
 ];
 
+// OPTIONS ATTORNEYS
+export const OPTIONS_ATTORNEYS = [
+    { 
+        href: '/', 
+        key:'ashley', 
+        label: 'Ashley Fletcher', 
+        photo: '/assets/img/ashley.jpg',
+        profession: 'LAYER & CEO', 
+        social: [
+            { key: '/fb/ashley'},
+            { key: '/instagram/ashley'},
+            { key: '/twitter/ashley'},
+        ] 
+    },
+    { 
+        href: '/', 
+        key:'rodney', 
+        label: 'Rodney Stratton',
+        profession: 'CEO', 
+        photo: '/assets/img/rodney.jpg',
+        social: [
+            { key: '/fb/rodney'},
+            { key: '/instagram/rodney'},
+            { key: '/twitter/rodney'},
+        ]  
+    },
+    { 
+        href: '/', 
+        key:'avie', 
+        label: 'Avie Beaton',
+        profession: 'LAYER CIVIL LAW', 
+        photo: '/assets/img/avie.jpg',
+        social: [
+            { key: '/fb/avie'},
+            { key: '/instagram/avie'},
+            { key: '/twitter/avie'},
+        ] 
+    },
+];
+
 // OPTIONS FOOTER
 export const OPTIONS_FOTER = [
     {

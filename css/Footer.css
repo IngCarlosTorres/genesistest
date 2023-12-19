@@ -30,3 +30,58 @@
     line-height: var(--h-5-line-height);
     white-space: nowrap;
 }
+
+.labelmade-with-love-by {
+    color: var(--light-text-color);
+    font-family: var(--h-6-font-family);
+    font-style: var(--h-6-font-style);
+    letter-spacing: var(--h-6-letter-spacing);
+    line-height: var(--h-6-line-height);
+}
+
+.background-with-love {
+    background: linear-gradient(45deg, #295C7A, #0072B5);
+    background-color: #FFFFFF;
+}
+
+.btntouch {
+    all: unset;
+    background-color: var(--primary-color);
+    border: 1px solid;
+    border-color: #e6e6e6;
+    border-radius: 0px 5px 5px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 117px;
+    display: flex;
+    align-items: center;
+}
+
+.btntouch .input-group-text-touch {
+    color: var(--light-text-color);
+    font-family: "Montserrat-Regular", Helvetica;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.input-form-control-make-touch {
+    background-color: #FFFFFF;
+    border-color: var(--muted-color);
+    color: var(--muted-color);
+    font-family: var(--h-6-font-family);
+    font-size: var(--h-6-font-size);
+    font-style: var(--h-6-font-style);
+    font-weight: var(--h-6-font-weight);
+    letter-spacing: var(--h-6-letter-spacing);
+    line-height: var(--h-6-line-height);
+    overflow: hidden;
+    padding: 0;
+    padding-left: 21px;
+    position: relative;
+    white-space: nowrap;
+    width: inherit;
+}

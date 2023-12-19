@@ -8,8 +8,11 @@ import { Formik, Form, Field } from 'formik'
 import { Appointment } from '@/interfaces/appointment'
 import { saveAppointment } from '@/services/appointment.service'
 import { ResponseApi } from '@/interfaces/api.interface';
+import { useState } from 'react';
 
 export const Navbar = () => {
+    const [activeNavBar, setActiveNavBar] = useState<boolean>(false)
+
 
     const setAppointment = async (appointment: Appointment) => {
         const response: ResponseApi = await saveAppointment(appointment);
@@ -30,13 +33,17 @@ export const Navbar = () => {
                             <h3 className="titleNavMobile font-extrabold sm:text-4xl text-3xl w-1/3">
                                 {TITLE_PAGE}
                             </h3>
-                            <ul className='flex justify-between items-center content-center flex-col sm:flex-row w-1/3 sm:mt-0 mt-20 sm:mr-10'>
-                                {OPTIONS_NAV.map((option) => (
-                                    <Link href={option.href} key={option.key} className='labelMenu sm:font-bold sm:text-lg font-normal text-3xl block sm:p-0 pb-1.5 sm:mb-0 sm:pb-0 mb-3 p-3 '>
-                                        {option.label}
-                                    </Link>
-                                ))}
-                            </ul>
+                            {
+                                activeNavBar ?
+                                <ul className='flex justify-between items-center content-center flex-col sm:flex-row w-1/3 sm:mt-0 mt-20 sm:mr-10'>
+                                    {OPTIONS_NAV.map((option) => (
+                                        <Link href={option.href} key={option.key} className='labelMenu sm:font-bold sm:text-lg font-normal text-3xl block sm:p-0 pb-1.5 sm:mb-0 sm:pb-0 mb-3 p-3 '>
+                                            {option.label}
+                                        </Link>
+                                    ))}
+                                </ul> : null
+                            }
+
                             <div className='flex sm:items-center sm:content-end justify-between w-1/3'>
                                 <div className='flex justify-between'>
                                     <div className='p-4 sm:w-12 w-8 h-4 relative'>
@@ -46,7 +53,7 @@ export const Navbar = () => {
                                         <Image className='w-full h-full cursor-pointer' alt='icn-shopping-cart' src="/assets/img/icn-shopping-cart.svg" fill={true} />
                                     </div>
                                 </div>
-                                <div className='p-4 w-8 h-4 sm:ml-0 ml-3 relative cursor-pointer flex text-end'>
+                                <div className='p-4 w-8 h-4 sm:ml-0 ml-3 relative cursor-pointer flex text-end' onClick={() => activeNavBar ? setActiveNavBar(false) : setActiveNavBar(true)}>
                                     <Image className='w-full h-full ' alt='navbar-toggler' src="/assets/img/navbar-toggler.svg" fill={true} />
                                 </div>
                             </div>
@@ -55,7 +62,7 @@ export const Navbar = () => {
                 </nav>
                 <div className='sm:flex sm:justify-between sm:items-center sm:content-center p-3'>
                     <div className='sm:w-1/2 sm:h-full'>
-                        <p className='label-h1Mobile text-center sm:text-justify sm:font-semibold sm:text-7xl font-bold text-4xl p-6'>
+                        <p className='label-h1Mobile text-center sm:text-justify sm:font-semibold sm:text-6xl font-bold text-4xl p-6'>
                             Help to reclaim  <br className='block sm:hidden' />
                             your life <br className='block sm:hidden' />
                             and freedom
